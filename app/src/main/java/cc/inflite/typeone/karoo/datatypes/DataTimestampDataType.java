@@ -29,7 +29,7 @@ public class DataTimestampDataType extends SdkDataType {
     @NonNull
     @Override
     public String getDisplayName() {
-        return "Data time";
+        return "Last Update timestamp";
     }
 
     @NonNull

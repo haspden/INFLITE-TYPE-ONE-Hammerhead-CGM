@@ -29,7 +29,7 @@ public class DirectionDataType extends SdkDataType {
     @NonNull
     @Override
     public String getDisplayName() {
-        return "Direction";
+        return "Direction Text";
     }
 
     @NonNull

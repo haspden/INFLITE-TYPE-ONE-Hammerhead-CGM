@@ -74,7 +74,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Developed with\nhttps://github.com/valterc"
+        android:text="Developed with\nhttps://github.com/haspden\nhttps://github.com/valterc"
         android:textSize="12sp"
         android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"

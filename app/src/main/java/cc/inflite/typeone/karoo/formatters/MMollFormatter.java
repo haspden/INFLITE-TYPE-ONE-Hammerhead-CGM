@@ -36,6 +36,6 @@ public class MMollFormatter extends SdkFormatter {
             return "N/A";
         }
 
-        return String.format(Locale.ENGLISH, "%.2f", (float)data.getData().getSgv() / 18);
+        return String.format(Locale.ENGLISH, "%.1f", (float)data.getData().getSgv() / 18);
     }
 }
