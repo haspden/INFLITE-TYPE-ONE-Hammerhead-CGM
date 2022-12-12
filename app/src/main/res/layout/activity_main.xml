@@ -38,7 +38,7 @@
                 android:text="e.g. https://subdomain.domain.com/api/v1/entries/sgv.json"
                 android:textSize="12sp" />
 
-            <EditTexth
+            <EditText
                 android:id="@+id/edittext_server_address"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
