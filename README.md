@@ -1,6 +1,6 @@
 # INFLITE Type One
 
-Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to display glucose values from their continious glucose monitors via [Nightscout](https://github.com/nightscout/cgm-remote-monitor) to a Karoo 2 bike computer.
+Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to display glucose values from their continuous glucose monitors via [Nightscout](https://github.com/nightscout/cgm-remote-monitor) to a Hammerhead Karoo / Karoo 2 bike computer.
 
 ## Warning !
 
@@ -12,7 +12,7 @@ Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to displa
 
 1. This app requires the user to have an active [Nightscout](https://github.com/nightscout/cgm-remote-monitor) website. 
     
-2. This app requires an active data connection to your Karoo / Karoo 2 Device.
+2. This app requires an active data connection to your Hammerhead Karoo / Karoo 2 Device.
     
     **_WARNING ! DATA CHARGES MAY APPLY_**
 
@@ -32,19 +32,20 @@ Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to displa
 
 3. **Setup / Use**
 
-    * Open the INFLITE TYPE ONE CGM App from the Apps screen on your Karoo Device.
+    * Open the INFLITE TYPE ONE CGM App from the Apps screen on your Hammerhead Karoo / Karoo 2 Device.
     * Enter your own [Nightscout](https://github.com/nightscout/cgm-remote-monitor) API Endpoint URL into the URL bar.
         * This should be in the format https://yoursubdomain.yourdomain.tld/api/v1/entries/sgv.json
         * example = https://mybloodglucose.herokuapp.com/api/v1/entries/sgv.json
         
-    * Set your interval preferences for how ofter you want the app to poll for new values. Most CGMs pull data every 5 minutes, however we have set the default interval to 1 minute to ensure a timely update after the CGM updates [Nightscout](https://github.com/nightscout/cgm-remote-monitor) with it's data.
+    * Set your interval preferences for how ofter you want the app to poll for new values. Most CGMs pull data every 5 minutes, however we have set the default interval to 1 minute (60 seconds) to ensure a timely update after the CGM updates [Nightscout](https://github.com/nightscout/cgm-remote-monitor) with it's data.
     
-    * Ammend your ride profiles to add the new data fields into position. There are several to choose from
+    * Amend your ride profiles to add the new data fields into position. There are several to choose from
         * **mmol/L** - Most recent blood glucose in mmol/L
-        * **mg/DL** - Most recent blood glucose in mg/DL
-        * **Direction** - A graphical representation of the most recent direction
-        * **Direction** - A textual representation of the most recent direction
-        * **Directions** - A graphical representation of the 5 most recent directions (right is most recent)
+        * **mg/dL** - Most recent blood glucose in mg/dL
+        * **Direction Icons** - A graphical representation of the most recent direction
+        * **Direction Text** - A textual representation of the most recent direction
+        * **Direction History** - A graphical representation of the 5 most recent directions (right is most recent)
+        * **Last Update Timestamp** - The timestamp of the last updated data
     
     * Direction graphical arrows and text strings are as follows
         * ↓︎↓︎ "DoubleDown"
