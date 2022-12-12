@@ -46,7 +46,7 @@ Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to displa
         * **Direction** - A textual representation of the most recent direction
         * **Directions** - A graphical representation of the 5 most recent directions (right is most recent)
     
-    *Direction graphical arrows and text strings are as follows
+    * Direction graphical arrows and text strings are as follows
         * ↓︎↓︎ "DoubleDown"
         * ↓︎ "SingleDown"
         * ↘︎ "FortyFiveDown"
@@ -54,8 +54,6 @@ Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to displa
         * ↑︎ "SingleUp"
         * ↗︎ "FortyFiveUp"
         * ↑︎↑︎ "DoubleUp"
-        
-
 
 </br></br>
 
