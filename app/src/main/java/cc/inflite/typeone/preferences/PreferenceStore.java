@@ -15,7 +15,7 @@ public class PreferenceStore {
     private static final String KEY_SERVER_ADDRESS = "ServerAddress";
     private static final String KEY_UPDATE_FREQUENCY = "UpdateFrequency";
 
-    private static final String DEFAULT_SERVER_ADDRESS = "https://haspdenbloodglucose.herokuapp.com/api/v1/entries/sgv.json";
+    private static final String DEFAULT_SERVER_ADDRESS = "https://subdomain.domain.com/api/v1/entries/sgv.json";
     private static final int DEFAULT_UPDATE_FREQUENCY = 30;
 
     @NonNull
