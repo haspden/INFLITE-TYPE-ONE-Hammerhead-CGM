@@ -6,13 +6,14 @@ import androidx.annotation.NonNull;
 
 import cc.inflite.typeone.data.SGVServiceData;
 import cc.inflite.typeone.service.BackgroundServiceClient;
+import io.hammerhead.sdk.v0.SdkContext;
 import io.hammerhead.sdk.v0.datatype.formatter.SdkFormatter;
 
 public class MgdlFormatter extends SdkFormatter {
 
-    private final Context context;
+    private final SdkContext context;
 
-    public MgdlFormatter(Context context) {
+    public MgdlFormatter(SdkContext context) {
         this.context = context;
     }
 

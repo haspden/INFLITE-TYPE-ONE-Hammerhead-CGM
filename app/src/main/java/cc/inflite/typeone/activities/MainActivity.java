@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setAdapter(adapter);
 
-        PreferenceData preferenceData = PreferenceStore.getPreferences(this);
+        PreferenceData preferenceData = PreferenceStore.getPreferences(getApplicationContext());
         editTextServerAddress.setText(preferenceData.getServerAddress());
         spinner.setSelection(adapter.getPosition(String.valueOf(preferenceData.getUpdateFrequency())));
     }
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onPause() {
         super.onPause();
 
-        PreferenceStore.savePreferences(this,
+        PreferenceStore.savePreferences(getApplicationContext(),
                 new PreferenceData(editTextServerAddress.getText().toString(), Integer.parseInt(spinner.getSelectedItem().toString())));
     }
 }

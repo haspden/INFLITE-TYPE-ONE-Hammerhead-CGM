@@ -10,6 +10,7 @@ import java.time.format.DateTimeFormatter;
 
 import cc.inflite.typeone.data.SGVServiceData;
 import cc.inflite.typeone.service.BackgroundServiceClient;
+import io.hammerhead.sdk.v0.SdkContext;
 import io.hammerhead.sdk.v0.datatype.formatter.SdkFormatter;
 
 public class DataTimesinceFormatter extends SdkFormatter {
@@ -19,9 +20,9 @@ public class DataTimesinceFormatter extends SdkFormatter {
 
 
 
-    private final Context context;
+    private final SdkContext context;
 
-    public DataTimesinceFormatter(Context context) {
+    public DataTimesinceFormatter(SdkContext context) {
         this.context = context;
     }
 
