@@ -59,7 +59,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginEnd="5dp"
-                android:text="Update freq (mins):" android:textStyle="bold"/>
+                android:text="Update freq (min):" android:textStyle="bold"/>
 
             <Spinner
                 android:id="@+id/spinner_update_frequency"
