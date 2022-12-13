@@ -48,7 +48,7 @@ public class BackgroundServiceClient {
 
         if (sgvServiceData == null ||
                 sgvServiceData.getTimestamp() == null ||
-                sgvServiceData.getTimestamp().isBefore(Instant.now().minus(Duration.ofSeconds(preferences.getUpdateFrequency()))))
+                sgvServiceData.getTimestamp().isBefore(Instant.now().minus(Duration.ofMinutes(preferences.getUpdateFrequency()))))
         {
             executor.submit(() -> {
                 try {

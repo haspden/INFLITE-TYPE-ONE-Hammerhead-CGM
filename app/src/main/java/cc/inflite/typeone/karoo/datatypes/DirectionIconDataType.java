@@ -28,7 +28,7 @@ public class DirectionIconDataType extends SdkDataType {
     @NonNull
     @Override
     public String getDisplayName() {
-        return "Direction Icons";
+        return "Direction Icon";
     }
 
     @NonNull

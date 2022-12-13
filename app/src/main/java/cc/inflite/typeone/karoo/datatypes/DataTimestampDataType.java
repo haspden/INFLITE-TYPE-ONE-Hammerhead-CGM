@@ -23,13 +23,13 @@ public class DataTimestampDataType extends SdkDataType {
     @NonNull
     @Override
     public String getDescription() {
-        return "Last timestamp of updated data";
+        return "Last data timestamp";
     }
 
     @NonNull
     @Override
     public String getDisplayName() {
-        return "Last timestamp";
+        return "Data time";
     }
 
     @NonNull

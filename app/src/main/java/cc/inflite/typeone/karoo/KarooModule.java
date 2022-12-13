@@ -28,7 +28,7 @@ public class KarooModule extends Module {
     @NonNull
     @Override
     public String getName() {
-        return "INFLITE TypeOne";
+        return "INFLITE TYPE ONE CGM";
     }
 
     @NonNull

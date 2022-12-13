@@ -14,5 +14,5 @@ dependencyResolutionManagement {
         maven { url "https://jitpack.io" }
     }
 }
-rootProject.name = "INFLITE TypeOne"
+rootProject.name = "INFLITE TYPE ONE CGM"
 include ':app'
