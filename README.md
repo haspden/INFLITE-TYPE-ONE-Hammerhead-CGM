@@ -1,4 +1,6 @@
-# INFLITE Type One
+# INFLITE TYPE ONE HAMMERHEAD KAROO / KAROO 2 CGM BLOOD GLUCOSE DATA WIDGET
+
+![Poster](media/poster.png?raw=true "Poster")
 
 Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to display glucose values from their continuous glucose monitors via [Nightscout](https://github.com/nightscout/cgm-remote-monitor) to a Hammerhead Karoo / Karoo 2 bike computer.
 
