@@ -76,8 +76,8 @@ If you have any questions relating to this app, please direct them to hammerhead
 </br></br>
 
 ## Screenshots
-
+![Poster](media/poster.png?raw=true "Poster")
 ![Application](media/app-configuration.png?raw=true "Application")
-![App drawer](media/apps.png?raw=true "Application")
+![App drawer](media/apps.png?raw=true "App drawer")
 ![Ride elements](media/ride-elements.png?raw=true "Ride elements")
 ![Ride elements 2](media/ride-elements2.png?raw=true "Ride elements")
