@@ -18,7 +18,7 @@ Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to displa
 
    **_WARNING ! DATA CHARGES MAY APPLY_**
 
-   Currently this looks to be around 3mb/hour of usage.
+   Currently estimates look to be around 1mb/hour of ride time.
 
 
 </br></br>
