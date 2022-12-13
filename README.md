@@ -15,6 +15,8 @@ Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to displa
 2. This app requires an active data connection to your Hammerhead Karoo / Karoo 2 Device.
 
    **_WARNING ! DATA CHARGES MAY APPLY_**
+   Currently this looks to be around 3mb/hour of usage.
+
 
 </br></br>
 
