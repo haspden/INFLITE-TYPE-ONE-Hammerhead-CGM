@@ -9,6 +9,7 @@ import java.util.Map;
 
 import cc.inflite.typeone.data.SGVServiceData;
 import cc.inflite.typeone.service.BackgroundServiceClient;
+import io.hammerhead.sdk.v0.SdkContext;
 import io.hammerhead.sdk.v0.datatype.formatter.SdkFormatter;
 
 public class DirectionIconFormatter extends SdkFormatter {
@@ -25,9 +26,9 @@ public class DirectionIconFormatter extends SdkFormatter {
         DIRECTION_ICON_MAP.put("DoubleUp", "↑↑");
     }
 
-    private final Context context;
+    private final SdkContext context;
 
-    public DirectionIconFormatter(Context context) {
+    public DirectionIconFormatter(SdkContext context) {
         this.context = context;
     }
 

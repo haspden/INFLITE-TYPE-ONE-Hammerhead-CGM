@@ -1,18 +1,17 @@
 package cc.inflite.typeone.preferences;
 
 import android.content.Context;
-import android.content.SharedPreferences;
+import android.util.Log;
 
 import androidx.annotation.NonNull;
 
-import com.frybits.harmony.Harmony;
-
 import cc.inflite.typeone.BuildConfig;
 import cc.inflite.typeone.data.PreferenceData;
+import io.hammerhead.sdk.v0.KeyValueStore;
+import io.hammerhead.sdk.v0.SdkContext;
 
 public class PreferenceStore {
 
-    private static final String PREFERENCE_NAME = BuildConfig.APPLICATION_ID + ".Preferences";
     private static final String KEY_SERVER_ADDRESS = "ServerAddress";
     private static final String KEY_UPDATE_FREQUENCY = "UpdateFrequency";
 
@@ -20,20 +19,44 @@ public class PreferenceStore {
     private static final int DEFAULT_UPDATE_FREQUENCY = 30;
 
     @NonNull
-    public static PreferenceData getPreferences(@NonNull Context context) {
-        SharedPreferences sharedPreferences = Harmony.getSharedPreferences(context, PREFERENCE_NAME);
-        return new PreferenceData(
-                sharedPreferences.getString(KEY_SERVER_ADDRESS, DEFAULT_SERVER_ADDRESS),
-                sharedPreferences.getInt(KEY_UPDATE_FREQUENCY, DEFAULT_UPDATE_FREQUENCY));
+    public static PreferenceData getPreferences(@NonNull SdkContext sdkContext) {
+        try {
+            KeyValueStore keyValueStore = sdkContext.getKeyValueStore();
+            String serverAddress = keyValueStore.getString(KEY_SERVER_ADDRESS);
+            String updateIntervalString = keyValueStore.getString(KEY_UPDATE_FREQUENCY);
 
+            if (serverAddress == null) {
+                serverAddress = DEFAULT_SERVER_ADDRESS;
+            }
+
+            int updateInterval = DEFAULT_UPDATE_FREQUENCY;
+            if (updateIntervalString != null) {
+                updateInterval = Integer.parseInt(updateIntervalString);
+            }
+
+            return new PreferenceData(serverAddress, updateInterval);
+        } catch (Exception e) {
+            Log.e(BuildConfig.APPLICATION_ID, "Unable to get preferences", e);
+        }
+
+        return new PreferenceData(DEFAULT_SERVER_ADDRESS, DEFAULT_UPDATE_FREQUENCY);
+    }
+
+    @NonNull
+    public static PreferenceData getPreferences(@NonNull Context context) {
+        return getPreferences(SdkContext.buildSdkContext(context));
     }
 
     public static void savePreferences(@NonNull Context context, @NonNull PreferenceData preferenceData) {
-        SharedPreferences sharedPreferences = Harmony.getSharedPreferences(context, PREFERENCE_NAME);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
-        editor.putString(KEY_SERVER_ADDRESS, preferenceData.getServerAddress());
-        editor.putInt(KEY_UPDATE_FREQUENCY, preferenceData.getUpdateFrequency());
-        editor.apply();
+        try {
+            SdkContext sdkContext = SdkContext.buildSdkContext(context);
+            KeyValueStore keyValueStore = sdkContext.getKeyValueStore();
+            keyValueStore.putString(KEY_SERVER_ADDRESS, preferenceData.getServerAddress());
+            keyValueStore.putString(KEY_UPDATE_FREQUENCY, String.valueOf(preferenceData.getUpdateFrequency()));
+            Log.d(BuildConfig.APPLICATION_ID, "Saved preferences");
+        } catch (Exception e) {
+            Log.e(BuildConfig.APPLICATION_ID, "Unable to save preferences", e);
+        }
     }
 
 }

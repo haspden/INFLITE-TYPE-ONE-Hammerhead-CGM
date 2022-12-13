@@ -26,6 +26,7 @@ import cc.inflite.typeone.data.PreferenceData;
 import cc.inflite.typeone.data.SGVData;
 import cc.inflite.typeone.data.SGVServiceData;
 import cc.inflite.typeone.preferences.PreferenceStore;
+import io.hammerhead.sdk.v0.SdkContext;
 import kotlin.Lazy;
 import kotlin.LazyKt;
 import timber.log.Timber;
@@ -42,7 +43,7 @@ public class BackgroundServiceClient {
         sgvServiceData = new SGVServiceData(null, Instant.EPOCH);
     }
 
-    public SGVServiceData getSGVData(Context context) {
+    public SGVServiceData getSGVData(SdkContext context) {
         SGVServiceData sgvServiceData = this.sgvServiceData;
         PreferenceData preferences = PreferenceStore.getPreferences(context);
 
