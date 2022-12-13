@@ -7,6 +7,7 @@ import java.util.List;
 
 import cc.inflite.typeone.BuildConfig;
 import cc.inflite.typeone.karoo.datatypes.DataTimestampDataType;
+import cc.inflite.typeone.karoo.datatypes.DataTimesinceDataType;
 import cc.inflite.typeone.karoo.datatypes.DirectionDataType;
 import cc.inflite.typeone.karoo.datatypes.DirectionHistoryIconDataType;
 import cc.inflite.typeone.karoo.datatypes.DirectionIconDataType;
@@ -44,6 +45,7 @@ public class KarooModule extends Module {
                 new MgdlDataType(getContext()),
                 new MmollDataType(getContext()),
                 new DataTimestampDataType(getContext()),
+                new DataTimesinceDataType(getContext()),
                 new DirectionDataType(getContext()),
                 new DirectionIconDataType(getContext()),
                 new DirectionHistoryIconDataType(getContext()));
