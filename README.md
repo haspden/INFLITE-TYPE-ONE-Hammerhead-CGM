@@ -51,14 +51,15 @@ Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to displa
         * **Direction Text** - A textual representation of the most recent direction
         * **Direction History** - A graphical representation of the 5 most recent directions (right is most recent)
         * **Last Update Timestamp** - The timestamp of the last updated data
+        * **Time Since Update** - Counting timer since last update e.g 00:01:30 for 1min 30sec
 
     * Direction graphical arrows and text strings are as follows
         * ↓︎↓︎ "DoubleDown"
-        * ↓︎ "SingleDown"
-        * ↘︎ "FortyFiveDown"
-        * →︎ "Flat"
-        * ↑︎ "SingleUp"
-        * ↗︎ "FortyFiveUp"
+        * ↓︎  "SingleDown"
+        * ↘︎  "FortyFiveDown"
+        * →︎  "Flat"
+        * ↑︎  "SingleUp"
+        * ↗︎  "FortyFiveUp"
         * ↑︎↑︎ "DoubleUp"
 
 </br></br>
