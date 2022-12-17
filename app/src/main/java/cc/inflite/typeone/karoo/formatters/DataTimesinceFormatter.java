@@ -45,7 +45,7 @@ public class DataTimesinceFormatter extends SdkFormatter {
             return "N/A";
         }
 
-        // OFFSET FOR GMT + DST
+        // OFFSET FOR GMT + DST TIME
         Calendar rightNow = Calendar.getInstance();
         int offsetInitial = rightNow.get(Calendar.ZONE_OFFSET) +
                 rightNow.get(Calendar.DST_OFFSET);
