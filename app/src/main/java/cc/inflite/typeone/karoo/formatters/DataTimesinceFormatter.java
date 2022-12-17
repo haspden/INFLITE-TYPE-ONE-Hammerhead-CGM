@@ -7,6 +7,7 @@ import androidx.annotation.NonNull;
 import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
+import java.util.Calendar;
 
 import cc.inflite.typeone.data.SGVServiceData;
 import cc.inflite.typeone.service.BackgroundServiceClient;
@@ -44,7 +45,15 @@ public class DataTimesinceFormatter extends SdkFormatter {
             return "N/A";
         }
 
-        // GET CURRENT TIME - TIMESTAMP OF DATA - 1 HOUR
-        return DATE_TIME_FORMATTER.format(Instant.ofEpochMilli(System.currentTimeMillis()-data.getData().getDate()-3600000));
+        // OFFSET FOR GMT + DST
+        Calendar rightNow = Calendar.getInstance();
+        int offsetInitial = rightNow.get(Calendar.ZONE_OFFSET) +
+                rightNow.get(Calendar.DST_OFFSET);
+
+        // CURRENT TIME STAMP
+        long current = System.currentTimeMillis();
+
+        // TIMESINCE (CURRENT TIME - GMT OFFSET - TIMESTAMP OF DATA
+        return DATE_TIME_FORMATTER.format(Instant.ofEpochMilli(current-offsetInitial-data.getData().getDate()));
     }
 }
