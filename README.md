@@ -26,41 +26,41 @@ Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to displa
 ## Installation and Setup
 1. **Download**
 
-    * You can download the most up to date release of this app by viewing the [releases](https://github.com/haspden/INFLITE-TYPE-ONE-Hammerhead-CGM/releases)
+   * You can download the most up to date release of this app by viewing the [releases](https://github.com/haspden/INFLITE-TYPE-ONE-Hammerhead-CGM/releases)
 
 
 2. **Installation**
 
-    * Sideload / Install this app onto your Hammerhead Karoo / Karoo 2 Device.
+   * Sideload / Install this app onto your Hammerhead Karoo / Karoo 2 Device.
 
    [DC Rainmaker provides instructions on sideloading here](https://www.dcrainmaker.com/2021/02/how-to-sideload-android-apps-on-your-hammerhead-karoo-1-karoo-2.html)
 
 3. **Setup / Use**
 
-    * Open the INFLITE TYPE ONE CGM App from the Apps screen on your Hammerhead Karoo / Karoo 2 Device.
-    * Enter your own [Nightscout](https://github.com/nightscout/cgm-remote-monitor) API Endpoint URL into the URL bar.
-        * This should be in the format https://yoursubdomain.yourdomain.tld/api/v1/entries/sgv.json
-        * example = https://mybloodglucose.herokuapp.com/api/v1/entries/sgv.json
+   * Open the INFLITE TYPE ONE CGM App from the Apps screen on your Hammerhead Karoo / Karoo 2 Device.
+   * Enter your own [Nightscout](https://github.com/nightscout/cgm-remote-monitor) API Endpoint URL into the URL bar.
+      * This should be in the format https://yoursubdomain.yourdomain.tld/api/v1/entries/sgv.json
+      * example = https://mybloodglucose.herokuapp.com/api/v1/entries/sgv.json
 
-    * Set your interval preferences for how ofter you want the app to poll for new values. Most CGMs pull data every 5 minutes, however we have set the default interval to 30 seconds to ensure a timely update after the CGM updates [Nightscout](https://github.com/nightscout/cgm-remote-monitor) with it's data.
+   * Set your interval preferences for how ofter you want the app to poll for new values. Most CGMs pull data every 5 minutes, however we have set the default interval to 30 seconds to ensure a timely update after the CGM updates [Nightscout](https://github.com/nightscout/cgm-remote-monitor) with it's data.
 
-    * Amend your ride profiles to add the new data fields into position. There are several to choose from
-        * **mmol/L** - Most recent blood glucose in mmol/L
-        * **mg/dL** - Most recent blood glucose in mg/dL
-        * **Direction Icons** - A graphical representation of the most recent direction
-        * **Direction Text** - A textual representation of the most recent direction
-        * **Direction History** - A graphical representation of the 5 most recent directions (right is most recent)
-        * **Last Update Timestamp** - The timestamp of the last updated data
-        * **Time Since Update** - Counting timer since last update e.g 00:01:30 for 1min 30sec
+   * Amend your ride profiles to add the new data fields into position. There are several to choose from
+      * **mmol/L** - Most recent blood glucose in mmol/L
+      * **mg/dL** - Most recent blood glucose in mg/dL
+      * **Direction Icons** - A graphical representation of the most recent direction
+      * **Direction Text** - A textual representation of the most recent direction
+      * **Direction History** - A graphical representation of the 5 most recent directions (right is most recent)
+      * **Last Update Timestamp** - The timestamp of the last updated data
+      * **Time Since Update** - Counting timer since last update e.g 00:01:30 for 1min 30sec
 
-    * Direction graphical arrows and text strings are as follows
-        * ↓︎↓︎ "DoubleDown"
-        * ↓︎  "SingleDown"
-        * ↘︎  "FortyFiveDown"
-        * →︎  "Flat"
-        * ↑︎  "SingleUp"
-        * ↗︎  "FortyFiveUp"
-        * ↑︎↑︎ "DoubleUp"
+   * Direction graphical arrows and text strings are as follows
+      * ↓︎↓︎ "DoubleDown"
+      * ↓︎  "SingleDown"
+      * ↘︎  "FortyFiveDown"
+      * →︎  "Flat"
+      * ↑︎  "SingleUp"
+      * ↗︎  "FortyFiveUp"
+      * ↑︎↑︎ "DoubleUp"
 
 </br></br>
 
