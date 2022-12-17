@@ -42,7 +42,7 @@ Application for [INFLITE TYPE ONE](https://inflite.cc/typeone/) riders to displa
         * This should be in the format https://yoursubdomain.yourdomain.tld/api/v1/entries/sgv.json
         * example = https://mybloodglucose.herokuapp.com/api/v1/entries/sgv.json
 
-    * Set your interval preferences for how ofter you want the app to poll for new values. Most CGMs pull data every 5 minutes, however we have set the default interval to 1 minute (60 seconds) to ensure a timely update after the CGM updates [Nightscout](https://github.com/nightscout/cgm-remote-monitor) with it's data.
+    * Set your interval preferences for how ofter you want the app to poll for new values. Most CGMs pull data every 5 minutes, however we have set the default interval to 30 seconds to ensure a timely update after the CGM updates [Nightscout](https://github.com/nightscout/cgm-remote-monitor) with it's data.
 
     * Amend your ride profiles to add the new data fields into position. There are several to choose from
         * **mmol/L** - Most recent blood glucose in mmol/L
