@@ -1,5 +1,7 @@
 {
   "name": "my-app",
+  "package": "cc.inflite.typeone",
+  "android.package": "cc.inflite.typeone",
   "scripts": {
     "eas-build-pre-install": "echo 123",
     "eas-build-post-install": "echo 456",
