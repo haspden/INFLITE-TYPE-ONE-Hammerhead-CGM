@@ -1,5 +1,21 @@
 {
   "build": {
+    "development": {
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      }
+    },
+    "preview": {
+      "android": {
+        "image": "latest"
+      },
+      "ios": {
+        "image": "latest"
+      }
+    },
     "production": {
       "android": {
         "image": "latest"
